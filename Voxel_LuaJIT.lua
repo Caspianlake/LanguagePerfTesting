@@ -2,7 +2,7 @@ local table_new = require("table.new")
 local bit = require("bit")
 local band, bxor, rshift, lshift = bit.band, bit.bxor, bit.rshift, bit.lshift
 
-local GridSize = 256
+local GridSize = 1024
 local FullSize = GridSize * GridSize * GridSize
 local VoxelGrid = table_new(FullSize,0)
 

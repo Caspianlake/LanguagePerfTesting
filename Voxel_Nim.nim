@@ -23,7 +23,6 @@ proc deterministicRandom(x, y, z, seed, minVal, maxVal: int32): int32 {.inline.}
 
 proc main() =
   var voxelGrid = newSeq[int32](FullSize)
-  # Cast the buffer address to UncheckedArray to allow direct pointer indexing
   let ptrGrid = cast[ptr UncheckedArray[int32]](addr voxelGrid[0])
   
   let startTime = cpuTime()
